@@ -7,8 +7,11 @@ import { Footer, Header } from './components'
 import { Outlet } from 'react-router-dom'
 
 
+
+
 function App() {
-  console.log(import.meta.env);
+  const a = process.env.VITE_APPWRITE_URL
+  console.log(a);
   const [loading, setLoading] = useState(true)
   const dispatch = useDispatch()
 
